@@ -1,0 +1,27 @@
+// utils
+@import "./utils/vars";
+@import "./utils/modern-normalize";
+@import "./utils/placeholder";
+@import "./utils/mixin";
+@import "./utils/visually-hidden";
+
+// base
+@import "./base/base";
+@import "./base/container";
+@import "./base/reset";
+
+// components
+@import "./components/button";
+@import "./components/logo";
+@import "./components/hero";
+@import "./components/features";
+@import "./components/functions";
+@import "./components/teammates";
+@import "./components/clients";
+@import "./components/modalform";
+@import "./components/portfolio";
+
+//layouts
+@import "./layouts/header";
+@import "./layouts/nav";
+@import "./layouts/footer";

@@ -1,0 +1,69 @@
+.button {
+  border-radius: 4px;
+  border-color: var(--accent-color);
+  padding: 10px 32px;
+  display: inline-block;
+  min-width: 200px;
+  color: var(--fond-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  background-color: var(--accent-color);
+  cursor: pointer;
+  letter-spacing: 0.06em;
+  @include animatingForm(background-color);
+
+  &:hover,
+  &:active {
+    background-color: var(--accent-active-color);
+  }
+}
+.box {
+  @extend %centeredFlex;
+  margin-top: 0;
+  margin-bottom: 50px;
+  padding-left: 0;
+}
+.box-button {
+  margin-right: 8px;
+  border-radius: 4px;
+
+  &:nth-child(5) {
+    margin-right: 0;
+  }
+}
+.key-active {
+  padding: 6px 22px;
+  min-width: 73px;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  border: none;
+  border-color: var(--accent-color);
+  background-color: var(--accent-color);
+  color: var(--fond-color);
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+.key {
+  padding: 6px 22px;
+  border-radius: 4px;
+  color: var(--main-text-color);
+  border-color: var(--fond-light-color);
+  background-color: var(--fond-light-color);
+  font-size: 16px;
+  line-height: 1.6;
+  font-weight: 500;
+  cursor: pointer;
+  @include animatingForm(background-color);
+  &:hover,
+  &:active {
+    color: #ffffff;
+    background-color: var(--accent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}

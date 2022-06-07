@@ -1,0 +1,93 @@
+.teammates {
+  background-color: var(--fond-light-color);
+}
+
+.teammates__title {
+  text-align: center;
+  margin: 0;
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  color: var(--main-text-color);
+}
+
+.teammates__list {
+  margin: 0;
+  display: flex;
+  text-align: center;
+  padding-left: 0;
+}
+
+.teammates__item {
+  display: block;
+  margin-right: 30px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  background-color: var(--fond-color);
+
+  &:nth-child(4) {
+    margin-right: 0;
+  }
+}
+
+.teammates__info {
+  padding: 30px 32px;
+}
+
+.teammates__name {
+  margin: 0;
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  color: var(--main-text-color);
+}
+
+.teammates__position {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.2;
+  color: var(--secondary-text-color);
+}
+
+.socials__list {
+  @extend %centeredFlex;
+  margin-top: 16px;
+  padding-left: 0;
+}
+
+.socials__item {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  margin-right: 10px;
+  &:nth-child(4) {
+    margin-right: 0;
+  }
+}
+
+.socials__link {
+  @extend %centeredFlex;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  color: var(--fond-color);
+  @include animatingForm(background-color);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
+}
+
+.socials__icon {
+  fill: #afb1b8;
+  @include animatingForm(fill);
+
+  .socials__link:hover &,
+  .socials__link:focus & {
+    fill: var(--fond-color);
+  }
+}
