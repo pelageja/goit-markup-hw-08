@@ -1,23 +1,27 @@
 /* WebStudio */
 .logo {
-    padding-top: 24px;
-    padding-bottom: 24px;
-    color: var(--accent-color);
-    font-family: var(--secondary-font);
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.2;
-    letter-spacing: 0.03em;
-    text-decoration: none;
+  display: inline-block;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  color: var(--accent-color);
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-decoration: none;
 }
 
 .logo__dark {
-    color: var(--main-text-color);
+  color: var(--main-text-color);
 }
 
 .logo__light {
-    color: var(--fond-color);
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.2;
+  color: var(--fond-color);
+}
+@media screen and (min-width: 768px) {
+  .logo {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
 }

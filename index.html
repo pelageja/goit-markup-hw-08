@@ -9,7 +9,7 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
     />
- <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <!--шапка-->
@@ -54,6 +54,18 @@
             >
           </li>
         </ul>
+        <button class="menu-btn">
+          <svg class="menu-btn__icon" width="40" height="40">
+            <use
+              class="menu-btn__icon-burger"
+              href="./images/icons.svg#icon-burger-menu"
+            ></use>
+            <use
+              class="menu-btn__icon-close"
+              href="./images/icons.svg#icon-close-modal"
+            ></use>
+          </svg>
+        </button>
       </div>
     </header>
     <!--Герой-->
@@ -548,6 +560,25 @@
           <button class="forma-btn button" type="submit">Отправить</button>
         </form>
       </div>
+    </div>
+
+    <!--Мобильное меню-->
+    <div class="mobile-menu">
+      <ul class="mobile-menu__nav">
+        <li><a href="">Студия</a></li>
+        <li><a href="">Портфолио</a></li>
+        <li><a href="">Контакты</a></li>
+      </ul>
+      <ul class="mobile-menu__contacts">
+        <li><a href="">+38 096 111 11 11</a></li>
+        <li><a href="">info@devstudio.com</a></li>
+      </ul>
+      <ul class="mobile-menu__socials">
+        <li><a href="">Instagram</a></li>
+        <li><a href="">Twitter</a></li>
+        <li><a href="">Facebook</a></li>
+        <li><a href="">LinkedIn</a></li>
+      </ul>
     </div>
     <script src="./js/modal.js"></script>
   </body>

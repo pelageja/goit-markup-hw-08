@@ -1,7 +1,10 @@
-.nav {
+/*.nav {
   @extend %centeredFlex;
+}*/
+.nav {
+  display: flex;
+  align-items: center;
 }
-
 /*Навигация сайта*/
 .site-nav {
   display: flex;

@@ -1,0 +1,12 @@
+.menu-btn {
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  @extend %centeredFlex;
+}
+.menu-btn__icon-close {
+  opacity: 0;
+}

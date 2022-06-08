@@ -271,7 +271,7 @@ summary {
   display: list-item;
 }
 
-.box, .features-list__icon, .socials__list, .socials__link, .clients__link, .modal__close-btn, .header__container, .nav, .site-nav__link, .contact__link, .footer-call__socials-link, .footer-form__input::placeholder {
+.box, .menu-btn, .features-list__icon, .socials__list, .socials__link, .clients__link, .modal__close-btn, .site-nav__link, .contact__link, .footer-call__socials-link, .footer-form__input::placeholder {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -437,12 +437,13 @@ ul {
 
 /* WebStudio */
 .logo {
-  padding-top: 24px;
-  padding-bottom: 24px;
+  display: inline-block;
+  padding-top: 16px;
+  padding-bottom: 16px;
   color: var(--accent-color);
   font-family: var(--secondary-font);
   font-weight: 700;
-  font-size: 26px;
+  font-size: 24px;
   line-height: 1.2;
   letter-spacing: 0.03em;
   text-decoration: none;
@@ -454,9 +455,26 @@ ul {
 
 .logo__light {
   color: var(--fond-color);
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
+}
+
+@media screen and (min-width: 768px) {
+  .logo {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+}
+
+.menu-btn {
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.menu-btn__icon-close {
+  opacity: 0;
 }
 
 .hero {
@@ -1071,6 +1089,25 @@ li > a {
 
 .header {
   border-bottom: 1px solid #ececec;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+  .header__container {
+    justify-content: space-between;
+  }
+}
+
+/*.nav {
+  @extend %centeredFlex;
+}*/
+.nav {
+  display: flex;
+  align-items: center;
 }
 
 /*Навигация сайта*/
