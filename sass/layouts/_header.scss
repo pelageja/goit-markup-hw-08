@@ -4,9 +4,6 @@
   &__container {
     display: flex;
     align-items: center;
-
-    @media screen and(max-width:767px) {
-      justify-content: space-between;
-    }
+    justify-content: space-between;
   }
 }

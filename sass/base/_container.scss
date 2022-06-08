@@ -4,18 +4,9 @@
   margin-left: auto;
   margin-right: auto;
 
-  // mobile only
-  @include media(mobile-only) {
-    width: 479.98px;
-  }
-
   // mobile >
   @include media(mobile) {
     width: 480px;
-  }
-  // tablet only
-  @include media(tablet-only) {
-    width: 1199.98px;
   }
 
   //tablet >
