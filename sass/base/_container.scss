@@ -1,21 +1,29 @@
 .container {
+  width: 480px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
 
+  // mobile-only
+  @include media(mobile-only) {
+    background-color: aqua;
+  }
   // mobile >
   @include media(mobile) {
+    background-color: blue;
     width: 480px;
   }
 
   //tablet >
   @include media(tablet) {
+    background-color: brown;
     width: 768px;
   }
 
   //desktop >
   @include media(desktop) {
+    background-color: blueviolet;
     width: 1200px;
   }
 }
