@@ -290,9 +290,6 @@ summary {
   margin: -1px;
 }
 
-/*$mobile: 480px;
-$tablet: 768px;
-$desktop: 1200px;*/
 html {
   box-sizing: border-box;
 }
@@ -311,12 +308,6 @@ body {
   background-color: var(--fond-color);
 }
 
-/*.container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: auto;
-}*/
 .container {
   padding-left: 15px;
   padding-right: 15px;
@@ -324,9 +315,21 @@ body {
   margin-right: auto;
 }
 
+@media screen and (max-width: 479.98px) {
+  .container {
+    width: 479.98px;
+  }
+}
+
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
+  }
+}
+
+@media screen and (max-width: 768px) and (max-width: 1199.98px) {
+  .container {
+    width: 1199.98px;
   }
 }
 
@@ -496,7 +499,7 @@ ul {
   border: none;
   cursor: pointer;
   background-color: transparent;
-  position: absolute;
+  position: relative;
   top: 0;
   right: 0;
 }

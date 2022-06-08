@@ -12,8 +12,10 @@
   margin: 0;
   margin-left: 93px;
   text-decoration: none;
+}
 
-  @media screen and (max-width: 767px) {
+@media screen and (max-width: 767px) {
+  .site-nav {
     display: none;
   }
 }
