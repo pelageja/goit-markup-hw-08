@@ -54,15 +54,11 @@
             >
           </li>
         </ul>
-        <button class="menu-btn">
+        <button class="menu-btn" data-menu-button>
           <svg class="menu-btn__icon" width="40" height="40">
             <use
               class="menu-btn__icon-burger"
               href="./images/icons.svg#icon-burger-menu"
-            ></use>
-            <use
-              class="menu-btn__icon-close"
-              href="./images/icons.svg#icon-close-modal"
             ></use>
           </svg>
         </button>
@@ -563,7 +559,15 @@
     </div>
 
     <!--Мобильное меню-->
-    <div class="mobile-menu">
+    <div class="mobile-menu" data-menu>
+      <button class="mobile-menu-btn" data-menu-button>
+        <svg class="menu-btn__icon" width="40" height="40">
+          <use
+            class="menu-btn__icon-close"
+            href="./images/icons.svg#icon-close-modal"
+          ></use>
+        </svg>
+      </button>
       <ul class="mobile-menu__nav">
         <li><a href="">Студия</a></li>
         <li><a href="">Портфолио</a></li>
@@ -581,5 +585,6 @@
       </ul>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
