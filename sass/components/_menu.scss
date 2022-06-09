@@ -6,6 +6,7 @@
   cursor: pointer;
   @extend %centeredFlex;
   background-color: transparent;
+
   @include media(tablet) {
     display: none;
   }
@@ -27,6 +28,7 @@
   }
 }
 .mobile-menu-btn {
+  position: absolute;
   width: 40px;
   height: 40px;
   padding: 0;
@@ -34,7 +36,6 @@
   cursor: pointer;
   background-color: transparent;
   @extend %centeredFlex;
-  position: absolute;
   top: 0;
   right: 0;
 }

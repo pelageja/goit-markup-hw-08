@@ -1,7 +1,7 @@
 .hero {
   height: 400px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 0 auto;
+  margin-right: 0 auto;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
@@ -11,8 +11,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  margin: auto;
-  max-width: 480px;
+  max-width: 1600px;
   padding-top: 118px;
   padding-bottom: 118px;
   margin-top: 0;
@@ -20,15 +19,15 @@
 
   @include media(tablet) {
     max-width: 1199px;
-
-    @include media(desktop) {
-      height: 600px;
-      max-width: 1600px;
-      padding-bottom: 200px;
-      padding-top: 200px;
-    }
+  }
+  @include media(desktop) {
+    height: 600px;
+    max-width: 1600px;
+    padding-bottom: 200px;
+    padding-top: 200px;
   }
 }
+
 .hero__title {
   margin: 0;
   margin-bottom: 30px;

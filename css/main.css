@@ -482,28 +482,27 @@ ul {
 }
 
 .mobile-menu-btn {
+  position: absolute;
   width: 40px;
   height: 40px;
   padding: 0;
   border: none;
   cursor: pointer;
   background-color: transparent;
-  position: relative;
   top: 0;
   right: 0;
 }
 
 .hero {
   height: 400px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 0 auto;
+  margin-right: 0 auto;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img-hero.jpg);
   background-color: #c4c4c4;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  margin: auto;
-  max-width: 480px;
+  max-width: 1600px;
   padding-top: 118px;
   padding-bottom: 118px;
   margin-top: 0;
@@ -516,7 +515,7 @@ ul {
   }
 }
 
-@media screen and (min-width: 768px) and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .hero {
     height: 600px;
     max-width: 1600px;
