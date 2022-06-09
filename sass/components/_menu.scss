@@ -34,7 +34,7 @@
   cursor: pointer;
   background-color: transparent;
   @extend %centeredFlex;
-  position: relative;
+  position: absolute;
   top: 0;
   right: 0;
 }

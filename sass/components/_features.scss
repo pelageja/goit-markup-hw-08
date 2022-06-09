@@ -2,35 +2,35 @@
   letter-spacing: 0.03em;
   padding-left: 0;
   margin: 0;
+
+  @include media(tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
 }
 
 .features-list__item {
   width: 450px;
-  margin-bottom: 30px;
-  &:nth-child(4) {
-    margin-bottom: 0;
 
-    @include media(tablet) {
-      width: 354px;
-      &:nth-child(-n + 2) {
-        margin-bottom: 30px;
-        &:nth-child(odd) {
-          margin-right: 30px;
+  @include media(mobile-only) {
+    margin-bottom: 30px;
 
-          @include media(desktop) {
-            flex-wrap: nowrap;
-            margin-right: 30px;
-            margin-bottom: 0;
-            width: 270px;
-            &:nth-child(4) {
-              margin-right: 0;
-            }
-          }
-        }
-      }
+    &:last-child {
+      margin-bottom: 0;
     }
   }
+
+  @include media(tablet) {
+    width: 354px;
+    margin: 15px;
+  }
+
+  @include media(desktop) {
+    width: 270px;
+  }
 }
+
 .features-list__icon {
   @extend %centeredFlex;
   background-color: rgba(245, 244, 250, 1);
