@@ -6,6 +6,9 @@
   cursor: pointer;
   @extend %centeredFlex;
   background-color: transparent;
+  @include media(tablet) {
+    display: none;
+  }
 }
 
 .mobile-menu {
