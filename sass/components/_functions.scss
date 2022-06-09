@@ -2,6 +2,13 @@
   margin: 0;
   padding-bottom: 94px;
   padding-top: 0;
+
+  @include media(mobile) {
+    display: none;
+  }
+  @include media(tablet) {
+    display: none;
+  }
 }
 
 .functions__title {
