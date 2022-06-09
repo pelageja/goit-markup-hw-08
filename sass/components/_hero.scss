@@ -1,5 +1,5 @@
 .hero {
-  height: 600px;
+  height: 400px;
   margin-left: auto;
   margin-right: auto;
   background-image: linear-gradient(
@@ -12,22 +12,37 @@
   background-position: center;
   background-size: cover;
   margin: auto;
-  max-width: 1600px;
-  padding-bottom: 200px;
-  padding-top: 200px;
+  max-width: 480px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   margin-top: 0;
   text-align: center;
 
-  &__title {
-    margin: 0;
-    margin-bottom: 30px;
-    font-style: normal;
-    font-weight: 900;
+  @include media(tablet) {
+    max-width: 1199px;
+
+    @include media(desktop) {
+      height: 600px;
+      max-width: 1600px;
+      padding-bottom: 200px;
+      padding-top: 200px;
+    }
+  }
+}
+.hero__title {
+  margin: 0;
+  margin-bottom: 30px;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.62;
+  color: var(--fond-color);
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  @include media(desktop) {
     font-size: 44px;
     line-height: 1.36;
-    color: var(--fond-color);
-    text-transform: uppercase;
-    text-align: center;
-    letter-spacing: 0.06em;
   }
 }
