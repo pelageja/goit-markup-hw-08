@@ -1,28 +1,41 @@
 .clients__title {
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
   text-align: center;
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+
+  @include media(desktop) {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
 }
 
 .clients__list {
-  display: flex;
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
 }
 
 .clients__item {
-  width: 170px;
+  width: 210px;
+  // width: 170px;
   height: 92px;
-  margin-right: 30px;
+  margin: 30px;
 
-  &:nth-child(6) {
-    margin-right: 0;
+  @include media(tablet) {
+    width: 226px;
+    flex-wrap: nowrap;
+  }
+
+  @include media(desktop) {
+    width: 170px;
   }
 }
 

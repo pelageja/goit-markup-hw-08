@@ -5,35 +5,60 @@
 .teammates__title {
   text-align: center;
   margin: 0;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.2;
   color: var(--main-text-color);
+
+  @include media(desktop) {
+    margin-bottom: 50px;
+    font-size: 36px;
+  }
 }
 
 .teammates__list {
   margin: 0;
-  display: flex;
   text-align: center;
   padding-left: 0;
+
+  @include media(tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
 }
 
 .teammates__item {
   display: block;
-  margin-right: 30px;
+  width: 450px;
+  height: 460px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background-color: var(--fond-color);
 
-  &:nth-child(4) {
-    margin-right: 0;
+  @include media(mobile-only) {
+    margin-bottom: 30px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  @include media(tablet) {
+    width: 354px;
+    margin: 15px;
+  }
+  @include media(desktop) {
+    width: 270px;
   }
 }
 
 .teammates__info {
-  padding: 30px 32px;
+  padding: 30px 16px;
+
+  @include media(desktop) {
+    padding: 30px 32px;
+  }
 }
 
 .teammates__name {

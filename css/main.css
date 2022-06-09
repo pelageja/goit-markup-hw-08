@@ -692,34 +692,73 @@ ul {
 .teammates__title {
   text-align: center;
   margin: 0;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.2;
   color: var(--main-text-color);
 }
 
+@media screen and (min-width: 1200px) {
+  .teammates__title {
+    margin-bottom: 50px;
+    font-size: 36px;
+  }
+}
+
 .teammates__list {
   margin: 0;
-  display: flex;
   text-align: center;
   padding-left: 0;
 }
 
+@media screen and (min-width: 768px) {
+  .teammates__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+
 .teammates__item {
   display: block;
-  margin-right: 30px;
+  width: 450px;
+  height: 460px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background-color: var(--fond-color);
 }
 
-.teammates__item:nth-child(4) {
-  margin-right: 0;
+@media screen and (max-width: 767.98px) {
+  .teammates__item {
+    margin-bottom: 30px;
+  }
+  .teammates__item:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .teammates__item {
+    width: 354px;
+    margin: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .teammates__item {
+    width: 270px;
+  }
 }
 
 .teammates__info {
-  padding: 30px 32px;
+  padding: 30px 16px;
+}
+
+@media screen and (min-width: 1200px) {
+  .teammates__info {
+    padding: 30px 32px;
+  }
 }
 
 .teammates__name {
@@ -782,30 +821,48 @@ ul {
 
 .clients__title {
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
   text-align: center;
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .clients__title {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
 }
 
 .clients__list {
-  display: flex;
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
 }
 
 .clients__item {
-  width: 170px;
+  width: 210px;
   height: 92px;
-  margin-right: 30px;
+  margin: 30px;
 }
 
-.clients__item:nth-child(6) {
-  margin-right: 0;
+@media screen and (min-width: 768px) {
+  .clients__item {
+    width: 226px;
+    flex-wrap: nowrap;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients__item {
+    width: 170px;
+  }
 }
 
 .clients__link {
