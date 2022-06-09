@@ -15,19 +15,18 @@
 }
 
 .clients__list {
+  display: flex;
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
-  display: flex;
   flex-wrap: wrap;
   margin: -15px;
 }
 
 .clients__item {
   width: 210px;
-  // width: 170px;
   height: 92px;
-  margin: 30px;
+  margin: 15px;
 
   @include media(tablet) {
     width: 226px;
