@@ -616,10 +616,24 @@ ul {
   color: var(--secondary-text-color);
 }
 
-.functions {
-  margin: 0;
-  padding-bottom: 94px;
-  padding-top: 0;
+@media screen and (min-width: 480px) {
+  .functions {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .functions {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .functions {
+    margin: 0;
+    padding-bottom: 94px;
+    padding-top: 0;
+  }
 }
 
 .functions__title {
