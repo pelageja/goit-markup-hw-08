@@ -11,10 +11,14 @@ footer {
   @include media(tablet) {
     display: flex;
     flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-around;
   }
 
   @include media(desktop) {
     display: flex;
+    text-align: left;
+
     align-items: baseline;
   }
 }
@@ -32,13 +36,12 @@ footer {
 }
 
 .footer__list {
-  // text-align: left;
   text-align: center;
   padding-left: 0;
   margin: 0px;
   margin-right: 0;
 
-  @include media(tablet) {
+  @include media(desktop) {
     text-align: left;
   }
 }
@@ -55,7 +58,6 @@ footer {
 }
 
 .footer__link {
-  text-decoration: none;
   font-style: normal;
   font-size: 14px;
   line-height: 1.7;
@@ -67,13 +69,18 @@ footer {
 
   @include media(tablet) {
     margin-top: 0;
-    margin-left: 165px;
   }
   @include media(desktop) {
     margin-left: 70px;
   }
 }
-
+.footer-call--form {
+  margin-top: 60px;
+  @include media(tablet-only) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
 .footer-call__title {
   margin-top: 0;
   margin-bottom: 20px;
@@ -92,6 +99,8 @@ footer {
   padding-left: 0;
   margin-top: 0;
   margin-bottom: 0;
+  @include media(desktop) {
+  }
 }
 
 .footer-call__socials-item {
@@ -123,8 +132,10 @@ footer {
 }
 
 .footer-form__input {
+  display: block;
+  margin: auto;
   padding: 15px;
-  margin-right: 12px;
+  //
   width: 358px;
   height: 50px;
   background-color: transparent;
@@ -136,7 +147,9 @@ footer {
   margin-bottom: 20px;
 
   @include media(desktop) {
+    display: flex;
     margin-bottom: 0;
+    margin-right: 12px;
   }
 }
 

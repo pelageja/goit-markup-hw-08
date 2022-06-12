@@ -138,13 +138,18 @@
 .modal-form__label-agreement {
   font-family: "Roboto";
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.17;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.01em;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 30px;
+
+  @include media(desktop) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 .modal-form__custom-checkbox:focus + .modal-form__checkbox {
   outline: 1px solid var(--accent-color);
@@ -176,9 +181,14 @@
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
+
+  @include media(desktop) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 .forma-btn {
   display: block;

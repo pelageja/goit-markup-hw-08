@@ -54,6 +54,14 @@
             >
           </li>
         </ul>
+        <button class="menu-btn" data-menu-button>
+          <svg class="menu-btn__icon" width="40" height="40">
+            <use
+              class="menu-btn__icon-burger"
+              href="./images/icons.svg#icon-burger-menu"
+            ></use>
+          </svg>
+        </button>
       </div>
     </header>
     <!-- Портфолио - buttons-->
@@ -61,29 +69,34 @@
       <section class="section">
         <div class="container">
           <h2 class="visually-hidden">Portfolio</h2>
-          <ul class="box">
-            <li class="box-button">
-              <button type="button" class="key-active">Все</button>
+          <ul class="box-button">
+            <li class="box-button__list">
+              <button
+                type="button"
+                class="box-button__key box-button__key-active"
+              >
+                Все
+              </button>
             </li>
-            <li class="box-button">
-              <button type="button" class="key">Веб-сайты</button>
+            <li class="box-button__list">
+              <button type="button" class="box-button__key">Веб-сайты</button>
             </li>
-            <li class="box-button">
-              <button type="button" class="key">Приложения</button>
+            <li class="box-button__list">
+              <button type="button" class="box-button__key">Приложения</button>
             </li>
-            <li class="box-button">
-              <button type="button" class="key">Дизайн</button>
+            <li class="box-button__list">
+              <button type="button" class="box-button__key">Дизайн</button>
             </li>
-            <li class="box-button">
-              <button type="button" class="key">Маркетинг</button>
+            <li class="box-button__list">
+              <button type="button" class="box-button__key">Маркетинг</button>
             </li>
           </ul>
           <!--Галерея фото-->
 
           <ul class="gallery">
-            <li class="link-gallery">
-              <a class="gallery-active" href="./imgportfolio/web-site.jpg">
-                <div class="gallery-active gallery-overlay">
+            <li class="gallery__list">
+              <a class="gallery__link" href="./imgportfolio/web-site.jpg">
+                <div class="gallery__link gallery-overlay">
                   <img
                     src="./imgportfolio/web-site.jpg"
                     alt="страница веб-сайта"
@@ -95,15 +108,15 @@
                     исчерпывающие сведения о компании или частном лице.
                   </p>
                 </div>
-                <div class="comment">
-                  <h2>Технокряк</h2>
-                  <p>Веб-сайт</p>
+                <div class="gallery-comment">
+                  <h2 class="gallery-comment__title">Технокряк</h2>
+                  <p class="gallery-comment__text">Веб-сайт</p>
                 </div>
               </a>
             </li>
-            <li class="link-gallery">
-              <a class="gallery-active" href="./imgportfolio/poster.jpg">
-                <div class="gallery-active gallery-overlay">
+            <li class="gallery__list">
+              <a class="gallery__link" href="./imgportfolio/poster.jpg">
+                <div class="gallery__link gallery-overlay">
                   <img
                     src="./imgportfolio/poster.jpg"
                     alt="спорт постер"
@@ -115,15 +128,17 @@
                     исчерпывающие сведения о компании или частном лице.
                   </p>
                 </div>
-                <div class="comment">
-                  <h2>Постер New Orlean vs Golden Star</h2>
-                  <p>Дизайн</p>
+                <div class="gallery-comment">
+                  <h2 class="gallery-comment__title">
+                    Постер New Orlean vs Golden Star
+                  </h2>
+                  <p class="gallery-comment__text">Дизайн</p>
                 </div>
               </a>
             </li>
-            <li class="link-gallery">
-              <a class="gallery-active" href="./imgportfolio/logo.jpg">
-                <div class="gallery-active gallery-overlay">
+            <li class="gallery__list">
+              <a class="gallery__link" href="./imgportfolio/logo.jpg">
+                <div class="gallery__link gallery-overlay">
                   <img
                     src="./imgportfolio/logo.jpg"
                     alt="логотип ресторана"
@@ -135,15 +150,15 @@
                     исчерпывающие сведения о компании или частном лице.
                   </p>
                 </div>
-                <div class="comment">
-                  <h2>Ресторан Seafood</h2>
-                  <p>Приложение</p>
+                <div class="gallery-comment">
+                  <h2 class="gallery-comment__title">Ресторан Seafood</h2>
+                  <p class="gallery-comment__text">Приложение</p>
                 </div>
               </a>
             </li>
-            <li class="link-gallery">
-              <a class="gallery-active" href="./imgportfolio/headphones.jpg">
-                <div class="gallery-active gallery-overlay">
+            <li class="gallery__list">
+              <a class="gallery__link" href="./imgportfolio/headphones.jpg">
+                <div class="gallery__link gallery-overlay">
                   <img
                     src="./imgportfolio/headphones.jpg"
                     alt="черные наушники"
@@ -155,15 +170,15 @@
                     исчерпывающие сведения о компании или частном лице.
                   </p>
                 </div>
-                <div class="comment">
-                  <h2>Проект Prime</h2>
-                  <p>Маркетинг</p>
+                <div class="gallery-comment">
+                  <h2 class="gallery-comment__title">Проект Prime</h2>
+                  <p class="gallery-comment__text">Маркетинг</p>
                 </div>
               </a>
             </li>
-            <li class="link-gallery">
-              <a class="gallery-active" href="./imgportfolio/boxes.jpg">
-                <div class="gallery-active gallery-overlay">
+            <li class="gallery__list">
+              <a class="gallery__link" href="./imgportfolio/boxes.jpg">
+                <div class="gallery__link gallery-overlay">
                   <img
                     src="./imgportfolio/boxes.jpg"
                     alt="коробочки"
@@ -175,15 +190,15 @@
                     исчерпывающие сведения о компании или частном лице.
                   </p>
                 </div>
-                <div class="comment">
-                  <h2>Проект Boxes</h2>
-                  <p>Приложение</p>
+                <div class="gallery-comment">
+                  <h2 class="gallery-comment__title">Проект Boxes</h2>
+                  <p class="gallery-comment__text">Приложение</p>
                 </div>
               </a>
             </li>
-            <li class="link-gallery">
-              <a class="gallery-active" href="./imgportfolio/monitor.jpg">
-                <div class="gallery-active gallery-overlay">
+            <li class="gallery__list">
+              <a class="gallery__link" href="./imgportfolio/monitor.jpg">
+                <div class="gallery__link gallery-overlay">
                   <img
                     src="./imgportfolio/monitor.jpg"
                     alt="монитор"
@@ -195,15 +210,17 @@
                     исчерпывающие сведения о компании или частном лице.
                   </p>
                 </div>
-                <div class="comment">
-                  <h2>Inspiration has no Borders</h2>
-                  <p>Веб-сайт</p>
+                <div class="gallery-comment">
+                  <h2 class="gallery-comment__title">
+                    Inspiration has no Borders
+                  </h2>
+                  <p class="gallery-comment__text">Веб-сайт</p>
                 </div>
               </a>
             </li>
-            <li class="link-gallery">
-              <a class="gallery-active" href="./imgportfolio/magazine.jpg">
-                <div class="gallery-active gallery-overlay">
+            <li class="gallery__list">
+              <a class="gallery__link" href="./imgportfolio/magazine.jpg">
+                <div class="gallery__link gallery-overlay">
                   <img
                     src="./imgportfolio/magazine.jpg"
                     alt="журнал"
@@ -215,15 +232,17 @@
                     исчерпывающие сведения о компании или частном лице.
                   </p>
                 </div>
-                <div class="comment">
-                  <h2>Издание Limited Edition</h2>
-                  <p>Дизайн</p>
+                <div class="gallery-comment">
+                  <h2 class="gallery-comment__title">
+                    Издание Limited Edition
+                  </h2>
+                  <p class="gallery-comment__text">Дизайн</p>
                 </div>
               </a>
             </li>
-            <li class="link-gallery">
-              <a class="gallery-active" href="./imgportfolio/label-tag.jpg">
-                <div class="gallery-active gallery-overlay">
+            <li class="gallery__list">
+              <a class="gallery__link" href="./imgportfolio/label-tag.jpg">
+                <div class="gallery__link gallery-overlay">
                   <img
                     src="./imgportfolio/label-tag.jpg"
                     alt="макет этикетки"
@@ -235,15 +254,15 @@
                     исчерпывающие сведения о компании или частном лице.
                   </p>
                 </div>
-                <div class="comment">
-                  <h2>Проект LAB</h2>
-                  <p>Маркетинг</p>
+                <div class="gallery-comment">
+                  <h2 class="gallery-comment__title">Проект LAB</h2>
+                  <p class="gallery-comment__text">Маркетинг</p>
                 </div>
               </a>
             </li>
-            <li class="link-gallery">
-              <a class="gallery-active" href="./imgportfolio/laptop-app.jpg">
-                <div class="gallery-active gallery-overlay">
+            <li class="gallery__list">
+              <a class="gallery__link" href="./imgportfolio/laptop-app.jpg">
+                <div class="gallery__link gallery-overlay">
                   <img
                     src="./imgportfolio/laptop-app.jpg"
                     alt="приложение для ноута"
@@ -255,9 +274,9 @@
                     исчерпывающие сведения о компании или частном лице.
                   </p>
                 </div>
-                <div class="comment">
-                  <h2>Growing Business</h2>
-                  <p>Приложение</p>
+                <div class="gallery-comment">
+                  <h2 class="gallery-comment__title">Growing Business</h2>
+                  <p class="gallery-comment__text">Приложение</p>
                 </div>
               </a>
             </li>
@@ -329,7 +348,7 @@
             </li>
           </ul>
         </div>
-        <div class="footer-call">
+        <div class="footer-call footer-call--form">
           <h3 class="footer-call__title">подпишитесь на рассылку</h3>
           <form class="footer-form">
             <input
@@ -349,5 +368,33 @@
         </div>
       </div>
     </footer>
+
+    <!--Мобильное меню-->
+    <div class="mobile-menu" data-menu>
+      <button class="mobile-menu-btn" data-menu-button>
+        <svg class="menu-btn__icon" width="24" height="24">
+          <use
+            class="menu-btn__icon-close"
+            href="./images/icons.svg#icon-close-modal"
+          ></use>
+        </svg>
+      </button>
+      <ul class="mobile-menu__nav">
+        <li><a href="./index.html">Студия</a></li>
+        <li><a href="./portfolio.html">Портфолио</a></li>
+        <li><a href="./">Контакты</a></li>
+      </ul>
+      <ul class="mobile-menu__contacts">
+        <li><a href="">+38 096 111 11 11</a></li>
+        <li><a href="">info@devstudio.com</a></li>
+      </ul>
+      <ul class="mobile-menu__socials">
+        <li><a href="">Instagram</a></li>
+        <li><a href="">Twitter</a></li>
+        <li><a href="">Facebook</a></li>
+        <li><a href="">LinkedIn</a></li>
+      </ul>
+    </div>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
